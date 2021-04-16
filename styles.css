@@ -1,0 +1,12 @@
+/* CSS 3 du site*/
+
+/*Appel de la Police*/
+@font-face {
+    font-family: 'Raleway';
+    src: url(content/fonts/Raleway/Raleway-VariableFont_wght.ttf);
+    src: url(content/fonts/Raleway/static/Raleway-Regular.ttf) format('truetype');
+}
+
+
+
+
