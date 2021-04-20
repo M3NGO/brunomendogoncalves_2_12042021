@@ -6,9 +6,10 @@
     src: url("content/fonts/Raleway/Raleway-VariableFont_wght.ttf");
     src: url("content/fonts/Raleway/static/Raleway-Regular.ttf") format('truetype');
 }
+/* application font Raleway au site, sinon Arial, helvetica ou sans-serif*/
+body{font-family: 'Raleway', Arial, Helvetica, sans-serif;}
 
-body{
-    font-family: Raleway;
+/* enlever les bullet points des li*/
+ul {list-style-type: none;}
 
-}
 
