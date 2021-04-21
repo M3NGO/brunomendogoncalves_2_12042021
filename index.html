@@ -33,42 +33,76 @@
         </div>
 <!-- ajout menu header -->
             <ul>
-                <li id="menu"><a id="lien" href="#">H&eacute;bergements</a></li> <!-- remplacer les accents par code HTML -->
-                <li id="menu"><a id="lien" href="#">Activit&eacute;s</a></li>
-                <li id="menu"><a id="lien_gras" href="#">S&apos;inscrire</a></li>
+                <div id="menu">
+                    <li><a id="lien" href="#">H&eacute;bergements</a></li> <!-- remplacer les accents par code HTML -->
+                </div>
+                <div id="menu">
+                    <li><a id="lien" href="#">Activit&eacute;s</a></li>
+                </div>
+                <div id="menu">
+                    <li><a id="lien_gras" href="#">S&apos;inscrire</a></li>
+                </div>
             </ul>
           </nav>
       </header>
 
 <!-- section trouver l'hébergement + recherche & filtres -->
-      <section>
+      <section class="recherche">
       <div>
-        <h1>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h1><br />
+        <h1>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h1>
         <p>En plein centre ville ou en pleine nature</p>
       </div>
-      <!-- ajout moteur de recherche -->
-      <form>
+<!-- ajout moteur de recherche -->
+      <form class="searchengine">
 <!-- icone fontawesome tiré du site : https://fontawesome.com/icons/ -->
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="search" id="site-search" name="q" placeholder="Marseille, France">
-        <button>Rechercher</button>
-      </form>
-<!-- Div filtres -->
-        <div>
-            <a>Filtres</a>
-            <ul>
-                <li><a href="#"><i class="fas fa-money-bill-wave"></i>&Eacute;conomique</a></li>
-                <li><a href="#"><i class="fas fa-child"></i>Familial</a></li>
-                <li><a href="#"><i class="fas fa-heart"></i>Romantique</a></li>
-                <li><a href="#"><i class="fas fa-dog"></i>Animaux autoris&eacute;s</a></li>
-            </ul>
+        <div id="map">
+            <i class="fas fa-map-marker-alt"></i>
         </div>
+        <div>
+        <input type="search" id="site-search" name="q" placeholder="Marseille, France">
+        </div>
+        <div id="search">
+            <button>Rechercher</button>
+        </div>
+      </form>
+    
+<!-- Div filtres -->
+        <section class="filtres">
+            <div>
+                <div>
+                <a>Filtres</a>
+                </div>
+                <div>
+                <span><i class="fas fa-money-bill-wave"></i></span>
+                <div id="iconefiltre">
+                    <a id="lienicones" href="#"><em>&Eacute;conomique</em></a>
+                </div>
+                </div>
+                <div>
+                <span><i class="fas fa-child"></i></span>
+                <div id="iconefiltre">
+                    <a id="lienicones" href="#"><em>Familial</em></a>
+                </div>
+                </div>
+                <div>
+                <span><i class="fas fa-heart"></i></span>
+                <div id="iconefiltre">
+                    <a id="lienicones" href="#"><em>Romantique</em></a>
+                </div>
+                </div>
+                <div>
+                <span><i class="fas fa-dog"></i></span>
+                <div id="iconefiltre">
+                    <a id="lienicones" href="#"><em>Animaux autoris&eacute;s</em></a>
+                </div>
+                </div>
+            </div>
 <!-- texte sous le moteur de recherche -->
         <div>
-            <p><i class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
+            <p><i id="i" class="fas fa-info"></i> Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
-    </section>     
-
+        </section>     
+    </section>
 <!-- section hebergement + les plus populaires -->
       <section>
 <!-- sous section acrticles pour l'hébergement -->
