@@ -38,19 +38,22 @@ p{font-size: 0.8em; color: rgba(48, 47, 47, 0.932)}
 
 
 /*partie recherche*/
-.recherche{display: flex; flex-flow: column wrap;}/*definit le main container flex-flow column wrap pour retour à la ligne*/
-.searchengine{display: flex; height: 35px;}/*rend la partie searchengine inflex et bords arrondis*/
+.recherche{display: flex; flex-flow: column wrap; margin-top:1em;}/*definit le main container flex-flow column wrap pour retour à la ligne*/
+.searchengine{display: flex; margin-top:1em; height: 35px;}/*rend la partie searchengine inflex et bords arrondis*/
 #map{display: inline-flex; font-size: 0.9em; padding: 15px; align-items: center; background-color: rgba(211, 211, 211, 0.849); border-top-left-radius: 10px; border-bottom-left-radius: 10px;}
 #site-search{ display: inline-flex; padding: 0.7em; height: 35px; border-top: solid 1px rgba(211, 211, 211, 0.849); border-bottom: solid 1px rgba(211, 211, 211, 0.849); border-left: transparent; border-right: transparent;}
 input::placeholder{ color: black; border: transparent; font-weight: bold}/*placeholder en noir et gras*/
 button{background-color: rgb(0, 89, 255); color: white; border: transparent; border-bottom-right-radius: 10px; border-top-right-radius: 10px; padding: 0.7em; height: 35px;}
 button:hover{background-color: blue;}
 
-.filtres{display: flex; flex-flow: column wrap; font-weight: bold;}
-#iconefiltre{display:inline-block; padding: 20px; font-weight: bold;}
-#lienicones{color: black; text-decoration: none; border-top: solid 1px rgba(211, 211, 211, 0.849); border-bottom: solid 1px rgba(211, 211, 211, 0.849); border-right:solid 1px rgba(211, 211, 211, 0.849); border-top-right-radius: 1.2em; border-bottom-right-radius: 1.2em; padding:0.6em; }
-section span{background-color: rgba(185, 210, 255, 0.719); border-radius: 50%; text-align:center; padding:0.8em; color: rgb(0, 89, 255); font-size: 0.9em; margin: -2em;}
-section em{display: inline-flex; text-align: justify;}
+
+.filtres{display: block; margin-top: 2em;}
+#iconefiltre1{display: inline-block; font-weight: bold;}
+#iconefiltre{display: inline-block; margin-left:1em; padding-right: -2em; font-weight: bold;}
+#lienicones{display: inline-block; color: black; text-decoration: none; border-top: solid 2px rgba(211, 211, 211, 0.849); border-bottom: solid 2px rgba(211, 211, 211, 0.849); border-right:solid 2px rgba(211, 211, 211, 0.849); border-top-right-radius: 1.4em; border-bottom-right-radius: 1.4em; padding:0.5em; }
+section span{background-color: rgba(185, 210, 255, 0.719); border-radius: 50%; text-align:center; padding:0.8em; color: rgb(0, 89, 255); font-size: 0.9em;}
+section em{display: inline-block; font-style: normal; center; margin-right:0.2em; padding-left: -0.5em;}
+
 #i{border-radius: 50%; border: 1px solid grey; margin-right:10px; padding:0.5em; font-size: 0.1em; color: blue}
 
 
