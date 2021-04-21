@@ -13,15 +13,19 @@ body{font-family: 'Raleway', Arial, Helvetica, sans-serif;}
 ul {list-style-type: none;}
 
 /* marge de page*/
-#div_body {width: auto; margin: auto; padding: 20px;}
+#div_body {width: auto; margin: auto; padding-left: 20px; padding-right: 20px;}
 
 
 /*mise en page menu top droite*/
-.header_nav{display: flex; width: 100%; justify-content: space-between; align-items: center;  }
+header{position:sticky; top: 30px; left: 30px;}
+#header_menu{display: flex; width: 100%; justify-content: space-between; align-items: center; height: 60px;}
 .logo_site {display: inline-block;}
 
-#menu {display: inline-block; padding: 30px;}
-#lien {font-weight: bold; color: black;}
-#lien_gras {font-weight: bolder; color: blue;}
+#menu {display: inline-block; padding: 30px; margin-left: auto;}
+#lien {color: black; text-decoration: none;}
+#lien:hover{color: rgba(0, 89, 255, 0.938); border-top: solid rgba(0, 89, 255, 0.938); padding-top: 47px;}
+#lien_gras {font-weight:bold; color: blue; text-decoration: none;}
+
+
 
 
