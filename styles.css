@@ -16,3 +16,12 @@ ul {list-style-type: none;}
 #div_body {width: auto; margin: auto; padding: 20px;}
 
 
+/*mise en page menu top droite*/
+.header_nav{display: flex; width: 100%; justify-content: space-between; align-items: center;  }
+.logo_site {display: inline-block;}
+
+#menu {display: inline-block; padding: 30px;}
+#lien {font-weight: bold; color: black;}
+#lien_gras {font-weight: bolder; color: blue;}
+
+
