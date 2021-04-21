@@ -17,14 +17,18 @@ ul {list-style-type: none;}
 
 
 /*mise en page menu top droite*/
-header{position:sticky; top: 30px; left: 30px;}
-#header_menu{display: flex; width: 100%; justify-content: space-between; align-items: center; height: 60px;}
-.logo_site {display: inline-block;}
+header{position:sticky; top: 30px; left: 30px;}/*mise en page du header*/
+#header_menu{display: flex; width: 100%; justify-content: space-between; align-items: center; height: 60px;}/*mise en page du header*/
+.logo_site {display: inline-block;}/*logo*/
 
-#menu {display: inline-block; padding: 30px; margin-left: auto;}
-#lien {color: black; text-decoration: none;}
-#lien:hover{color: rgba(0, 89, 255, 0.938); border-top: solid rgba(0, 89, 255, 0.938); padding-top: 47px;}
-#lien_gras {font-weight:bold; color: blue; text-decoration: none;}
+#menu {display: inline-block; padding: 30px; margin-left: auto;}/*mise en forme menu header*/
+#lien {color: black; text-decoration: none;}/*mise en forme menu header*/
+#lien:hover{color: rgba(0, 89, 255, 0.938); border-top: solid rgba(0, 89, 255, 0.938); padding-top: 47px;}/*trait au dessus menu au survol*/
+#lien_gras {font-weight:bold; color: blue; text-decoration: none;}/*mise en forme s'inscrire*/
+#lien_gras:hover{font-size: 120%;} /*faire grossir s'inscrire*/
+
+/*mise en page du contenu*/
+
 
 
 
