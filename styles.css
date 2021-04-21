@@ -12,4 +12,7 @@ body{font-family: 'Raleway', Arial, Helvetica, sans-serif;}
 /* enlever les bullet points des li*/
 ul {list-style-type: none;}
 
+/* marge de page*/
+#div_body {width: auto; margin: auto; padding: 20px;}
+
 
