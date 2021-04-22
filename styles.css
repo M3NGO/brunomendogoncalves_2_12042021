@@ -153,15 +153,25 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 
 /*partie hébergements et Les plus pop*/
 /*hebergements*/
-.hebergements{display:flex; flex-direction: row;}/*pour faire de la section comprenant tout l'hébergement un seul et même bloc*/
-.titres-flex{display:flex; width:100%; padding-left: 2.5em; padding-top: 2em; font-weight: bold;}
-.icone-right{padding-left: 12em;}
+.acco{display: flex; flex-direction: row; justify-content:space-between;}
 
-article{display: flex; flex-wrap: wrap; width: 62%; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;margin-right: 3em;}
-.photos-article{max-width: 246px; border-top-left-radius: 1.2em; border-top-right-radius: 1.2em;}
-.box{background-color: white; border-radius: 1.2em; padding:0.3em; max-height: 199px; /*overflow: hidden;*/}
-aside{display: flex; width:33%; flex-direction: column; align-items: flex-start;background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;}
-.photos-aside{ max-height: 140px;}
+.titres-flex{display:flex; width:100%; padding-left: 2.5em; padding-top: 1em; font-weight: bold;}
+
+
+article{display: flex; flex-wrap: wrap; max-width:100%; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;margin-right: 2em;}
+.photos-article{width:240px; height: 160px; border-top-left-radius: 1.2em; border-top-right-radius: 1.2em;}
+.box{background-color: white; border-radius: 1.3em; padding:0.3em; height: auto; width: 240px;}
+.icone-right{padding-left: 12em;}
+.sous-image{font-size: 0.7em; padding-right: 0.1em; padding-left: 0.2em;}
+.lien-flex{display:flex; text-decoration: none; color: black; padding-left: 3em; padding-top: 3em; padding-bottom: 3em; font-weight: bold;}
+
+.pop{display: flex; justify-content: space-between}
+aside{display: flex; max-width:530px; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;}
+.photos-aside{width:170px; height: 140px; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;}
+.box-aside{display: flex; width: 100%; background-color: white; border-radius: 1.3em; padding:0.3em; height: 140px; width: 550px;}
+
+.etoiles{font-size: 1em; color: rgba(214, 214, 214, 0.616); padding-left: 0.2em;padding-bottom: 0.8em;}
+.etoiles:hover{color:blue;}
 
 /*partie activités*/
 .activity{display: flex; border: solid blue;width:100%; flex-wrap: wrap; }
