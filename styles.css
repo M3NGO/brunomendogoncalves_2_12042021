@@ -152,10 +152,12 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 }
 
 /*partie hébergements et Les plus pop*/
-article{}
-aside{}
+/*hebergements*/
+article{display: flex; width: 800px; flex-wrap : wrap;}
+aside{display: flex;}
 
-figure{}
+.image-hebergement{display: inline-flex; }
+.photos{max-width: 20%; max-height: 20%;}
 figcaption{}
 p{}
 
