@@ -13,7 +13,7 @@ body{font-family: 'Raleway', Arial, Helvetica, sans-serif;}
 ul {list-style-type: none;}
 
 /* marge de page*/
-#div_body {width: auto; margin: auto; padding-left: 20px; padding-right: 20px;}
+#div_body {margin-left: 20px; margin-right: 20px;}
 
 
 /*mise en page menu top droite*/
@@ -153,21 +153,24 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 
 /*partie hébergements et Les plus pop*/
 /*hebergements*/
-article{display: flex; width: 800px; flex-wrap : wrap;}
-aside{display: flex;}
+.hebergements{display:flex; flex-direction: row;}/*pour faire de la section comprenant tout l'hébergement un seul et même bloc*/
+.titres-flex{display:flex; width:100%; padding-left: 2.5em; padding-top: 2em; font-weight: bold;}
+.icone-right{padding-left: 12em;}
 
-.image-hebergement{display: inline-flex; }
-.photos{max-width: 20%; max-height: 20%;}
-figcaption{}
-p{}
+article{display: flex; flex-wrap: wrap; width: 62%; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;margin-right: 3em;}
+.photos-article{max-width: 246px; border-top-left-radius: 1.2em; border-top-right-radius: 1.2em;}
+.box{background-color: white; border-radius: 1.2em; padding:0.3em; max-height: 199px; /*overflow: hidden;*/}
+aside{display: flex; width:33%; flex-direction: column; align-items: flex-start;background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;}
+.photos-aside{ max-height: 140px;}
 
 /*partie activités*/
-section{}
+.activity{display: flex; border: solid blue;width:100%; flex-wrap: wrap; }
+.photos-activity{max-width: 302px;}
 figure{}
 figcaption{}
 
 /*footer*/
-nav{}
+footer nav{display: flex; background-color: rgba(214, 214, 214, 0.616) ; width: 100%;}
 
 
 
