@@ -61,7 +61,7 @@
       </form>
     </section>
 <!-- Section filtres / mise en place de plusieurs div pour isoler les icones du texte pour le css -->
-    <section class="filtres">
+    <div class="filtres">
             <div class="iconefiltre1">
             <a>Filtres</a>
             </div>
@@ -97,7 +97,7 @@
                 <a class="liens-filtre" href="#">Animaux autoris&eacute;s</a>
             </div>
             </div>
-    </section> 
+        </div> 
     <!-- texte sous le moteur de recherche -->
     <div class="lignei">
         <div class="logoi">
@@ -109,7 +109,7 @@
     </div>
 <!-- section hebergement + les plus populaires -->
 <div class="accommodation">       
-<section>
+<main>
 <!-- sous section acrticles pour l'hébergement -->
             <article>
                 <div class="titres-flex">
@@ -209,9 +209,9 @@
                     <a class="lien-flex" href="#">Afficher plus</a><!-- lien # vers page "Afficher plus" -->
                 </div>
             </article>
-        </section>
+        </main>
 <!-- sous section aside pour les populaires -->
-        <section>
+        <div>
             <aside>
                 <div class="titres-flex">
                     <h2>Les plus populaires<i class="fas fa-chart-line icone-right"></i></h2> <!-- ajout icone chart à droite titre -->
@@ -262,40 +262,48 @@
                     </figcaption> 
                 </figure>
             </aside>
-        </section>
+        </div>
     </div> 
 <!-- section activités -->
 
 
       <section class="activity">
-        <h2 class="titres-flex">Activit&eacute;s &agrave; Marseille</h2>
+          <div>
+        <h2 class="titres-flex marge">Activit&eacute;s &agrave; Marseille</h2>
+        </div>
         <div class="box-activity">
               <div class="box-de-un">
             <div class="box-photos1">
-                    <a href='#'><img class="photos-activity1" src="content/images/activity/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt='Vieux Port'/><div class="sous-titres"><a class="titres-box">Vieux Port</a></div></a>       
+                    <a href='#'><img class="photos-activity1" src="content/images/activity/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt='Vieux Port'/></a>       
+                    <div class="sous-titres"><a class="titres-box">Vieux Port</a></div>
             </div>
         </div>
         <div class="box-de-deux">
             <div class="box-photos2">
-            <a href='#'><img class="photos-activity2" src="content/images/activity/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt='Fort de Pom&egrave;gues'/><div class="sous-titres"><a class="titres-box">Fort de Pom&egrave;gues</a></div></a>
+            <a href='#'><img class="photos-activity2" src="content/images/activity/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt='Fort de Pom&egrave;gues'/></a>
+            <div class="sous-titres"><a class="titres-box">Fort de Pom&egrave;gues</a></div>
             </div>
           <div class="box-photos3">
-            <a href='#'><img class="photos-activity3" src="content/images/activity/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt='&Icirc;les du Frioul'/><div class="sous-titres"><a class="titres-box">&Icirc;les du Frioul</a></div></a>
+            <a href='#'><img class="photos-activity3" src="content/images/activity/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt='&Icirc;les du Frioul'/></a>
+            <div class="sous-titres"><a class="titres-box">&Icirc;les du Frioul</a></div>
         </div>
         </div>
             <div class="box-de-un">
         <div class="box-photos4">
-            <a href='#'><img class="photos-activity4" src="content/images/activity/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt='Parc National des Calanques'/><div class="sous-titres"><a class="titres-box">Parc National des Calanques</a></div></a>
+            <a href='#'><img class="photos-activity4" src="content/images/activity/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt='Parc National des Calanques'/></a>
+            <div class="sous-titres"><a class="titres-box">Parc National des Calanques</a></div>
         </div>
         </div>
 
         <div class="box-de-deux">
             <div class="box-photos5">
-            <a href='#'><img class="photos-activity5" src="content/images/activity/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt='Notre-Dame-de-la-Garde'/><div class="sous-titres"><a class="titres-box">Notre-Dame-de-la-Garde</a></div></a>
+            <a href='#'><img class="photos-activity5" src="content/images/activity/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt='Notre-Dame-de-la-Garde'/></a>
+            <div class="sous-titres"><a class="titres-box">Notre-Dame-de-la-Garde</a></div>
         </div>
 
         <div class="box-photos6">
-            <a href='#'><img class="photos-activity6" src="content/images/activity/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt='Parc Longchamp'/><div class="sous-titres"><a class="titres-box">Parc Longchamp</a></div></a>
+            <a href='#'><img class="photos-activity6" src="content/images/activity/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt='Parc Longchamp'/></a>
+            <div class="sous-titres"><a class="titres-box">Parc Longchamp</a></div>
         </div>
         </div>
 </div>
@@ -330,5 +338,6 @@
                 </div>
             </nav>
           </footer>
+    </div>
   </body>
 </html>
