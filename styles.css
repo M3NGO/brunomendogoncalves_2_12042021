@@ -14,7 +14,7 @@ body{font-family: 'Raleway','Raleway Bold', Arial, Helvetica, sans-serif;}
 ul {list-style-type: none;}
 
 /* marge de page*/
-#div_body {margin-left: 4em; margin-right: 4em;}
+#div_body {margin-left: 2em; margin-right: 2em;}
 
 
 /*mise en page menu top droite*/
@@ -206,8 +206,13 @@ img.photos-activity1{height: 90%;width: 100%; object-position: 0 10; object-fit:
 .sous-titres{text-decoration: none; margin-top: 1em; margin-left: 1em;}
 
 /*footer*/
-.footer{display: flex; background-color: rgba(214, 214, 214, 0.616); width: 100%;}
+.footer{display: flex; justify-content:space-between; background-color: rgba(214, 214, 214, 0.616); width: 100%; padding-top: 2em; padding-bottom:2em}
 .footer-text{text-decoration: none; color: black;}
+.bold{font-weight: bold;}
+
+.box-footer{width: 33.33%;}
+
+.space{margin-bottom: 0.8em;}
 
 
 
