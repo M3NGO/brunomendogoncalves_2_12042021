@@ -156,12 +156,12 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 /*hebergements*/
 .accommodation{display: flex; flex-direction: row;}
 
-.titres-flex{display:flex; width:100%; padding-left: 2em; padding-top: 1em; font-weight: "Raleway Bold";}
+.titres-flex{display:flex; width:100%; padding-left: 2em; padding-top: 1em; font-weight: 'Raleway Bold';}
 
 
 article{display: flex; flex-wrap: wrap; width:68em; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;margin-right: 2em;}
-.photos-article{height: 11em; width: 19.1em;border-top-left-radius: 1.2em; border-top-right-radius: 1.2em;}
-.box{background-color: white; border-radius: 1.3em; padding:0.3em; height: 14em; width: 19.1em; margin-left:1.5em;margin-right: 1em; box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
+.photos-article{height: 11em; width: 19.1em;border-top-left-radius: 1.2em; border-top-right-radius: 1.2em; }
+.box{cursor:pointer;/*cursor:pointer pour faire tout le div clickable*/ background-color: white; border-radius: 1.3em; padding:0.3em; height: 14em; width: 19.1em; margin-left:1.5em;margin-right: 1em; box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
 .box-photo{overflow: hidden; max-height: 8.2em; max-width: auto;}
 .icone-right{padding-left: 6em; margin-right: 1.5em;}
 .sous-image{font-size: 0.7em; padding-right: 0.1em; padding-left: 1em; padding-top: 1em;}
@@ -170,15 +170,15 @@ article{display: flex; flex-wrap: wrap; width:68em; background-color: rgba(214, 
 
 .pop{display: flex;}
 aside{display: flex; width: 23em; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;flex-direction: column;}
-.photos-aside{width:9em; height: 9em; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;}
-.box-aside{display: flex; max-width: fit-content; background-color: white; border-radius: 1.3em; padding:0.3em; height: 9em; width:21em; margin-left:1.5em;margin-right: 1.5em;margin-bottom:1.9em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
+.photos-aside{width:9em; height: 9em; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;object-fit:cover;}
+.box-aside{cursor:pointer;display: flex; max-width: fit-content; background-color: white; border-radius: 1.3em; padding:0.3em; height: 9em; width:21em; margin-left:1.5em;margin-right: 1.5em;margin-bottom:1.9em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
 .sous-image-aside{font-size: 0.7em; padding-right: 2.9em; padding-left: 1em; padding-top:0.5em}
 .etoiles{display: flex; color: rgba(214, 214, 214, 0.616); padding-bottom: 2em;}
 .margetop{margin-top: 3em;}
 .p-aside{margin-bottom: 1em;font-size: 1em;}
 .etoiles:hover{color:blue;}
 .checked{color: blue;}/*pour etoiles bleues repris de : https://www.w3schools.com/howto/howto_css_star_rating.asp - merci*/
-.titres-box{font-weight: "Raleway Bold"; font-size: 1.2em;}
+.titres-box{font-weight: bold; font-size: 1.2em; text-decoration:none; }
 
 .euro{font-weight: bold; font-size: 1.2em;}
 
@@ -190,12 +190,12 @@ aside{display: flex; width: 23em; height: 100%; flex-wrap: wrap; background-colo
 .box-de-un{display: block; height:40em; width: 25%;}
 .box-de-deux{display: block; height:40em; width: 25%; object-fit:cover;}
 
-.box-photos1{height: 100%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
-.box-photos2{height: 55%; width:320px;border-radius: 1.3em;margin-bottom: 3.5em; box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
-.box-photos3{height: 36%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
-.box-photos4{height: 100%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
-.box-photos5{height: 35%; width:320px;border-radius: 1.3em;margin-bottom: 3.5em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
-.box-photos6{height: 56%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849)}
+.box-photos1{height: 100%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
+.box-photos2{height: 55%; width:320px;border-radius: 1.3em;margin-bottom: 3.5em; box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
+.box-photos3{height: 36%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
+.box-photos4{height: 100%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
+.box-photos5{height: 35%; width:320px;border-radius: 1.3em;margin-bottom: 3.5em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
+.box-photos6{height: 56%; width:320px;border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
 
 img.photos-activity1{height: 90%;width: 100%; object-position: 0 10; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
 .photos-activity2{height: 80%;width: 100%;object-position: 0 10; object-fit:cover;border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
