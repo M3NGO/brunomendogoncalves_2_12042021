@@ -105,20 +105,26 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
     font-weight: bold; 
     margin-right: 1em;
 }
+.small{font-size: 0.8em}/*pour adapter la taille des icones filtres les unes aux autres*/
+.medium{font-size: 1em}/*pour adapter la taille des icones filtres les unes aux autres*/
+.normal{font-size: 0.9em}/*pour adapter la taille des icones filtres les unes aux autres*/
+
+.paddm{padding-right:0.9em; padding-left: 0.9em; padding-top:0.9em; padding-bottom:0.9em}/*pour adapter les icones des filtres*/
+.paddc{padding-top:0.6em; padding-bottom: 0.4em; padding-right: 0.8em; padding-left: 0.8em }/*pour adapter les icones des filtres*/
+.paddh{padding:0.6em}/*pour adapter les icones des filtres*/
+.paddd{padding-left:0.7em; padding-right: 0.7em; padding-bottom:0.7em; padding-top:0.6em}/*pour adapter les icones des filtres*/
+
 .boutons-filtre{/*pour la margin sinon les boutons ne prennent pas la forme désirée*/
     display: flex; 
     margin-right: 2em;
 }
 .liens-filtre:hover{color: blue;}
-.icones-filtre:hover{color: red}
 
 .icones-filtre{/*mise en forme des icones de la zone filtre*/
     display: inline-flex; 
     background-color: rgba(185, 210, 255, 0.719); 
     border-radius: 50%; /*border radius 50% pour entourer l'icone*/
-    padding:1em; /*padding 1em pour espacer l'icone des bords*/
     color: rgb(0, 89, 255);
-    font-size: 0.8em;/*font size des icones pour réduire leur taille*/
 }
 .liens-filtre{/*mise en forme des liens clicables de la zone filtres*/
     display:inline-flex; 
@@ -164,6 +170,7 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 .accommodation{display: flex; flex-direction: row; max-width: 100%;max-height: fit-content;}
 
 .titres-flex{display:flex; width:100%; padding-left: 1em; font-weight: bold;}
+.bottom{padding-bottom:0.8em}
 
 
 article{display: flex; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em; padding:1em; width: 66%; margin-right: 2em; height:30%;}
@@ -171,11 +178,11 @@ article{display: flex; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.
 .box{cursor:pointer;/*cursor:pointer pour faire tout le div clickable*/ background-color: white; border-radius: 1.3em; padding:0.3em; height: 14em; width: 19.1em; margin: 1em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
 .box-photo{overflow: hidden; max-height: 8.2em; max-width: auto; object-fit: cover;}
 .sous-image{font-size: 0.8em; padding-right: 0.1em; padding-left: 1.5em; padding-top: 1em;}
-.lien-flex{display:flex; text-decoration: none; color: black; padding-left: 1.5em; padding-top: 3em; padding-bottom: 3em; font-weight: bold;}
+.lien-flex{display:flex; text-decoration: none; color: black; padding-left: 1.5em; padding-top: 3em; padding-bottom: 2em; font-weight: bold;}
 .p-hebergement{margin-bottom: -0.5em;font-size: 1.1em;}
 
 
-aside{display: flex; width: 29%; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;flex-direction: column;}
+aside{display: flex; width: 28emm; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;flex-direction: column;}
 
 .chart{font-size: 1.2em; padding-left: 41%}
 .photos-aside{width:9em; height:100%; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;object-fit: cover;}
