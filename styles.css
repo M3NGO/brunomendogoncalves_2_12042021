@@ -35,9 +35,6 @@ h1{font-size: 1.2em; font-weight: bold;}
 h2{font-size: 1.2em; font-weight: bold;}
 p{font-size: 0.8em; color: rgba(48, 47, 47, 0.932)}
 
-/* les icones*/
-
-
 /*partie recherche*/
 .recherche{/*definit le main container flex-flow column wrap pour retour à la ligne*/
     display: flex; 
@@ -105,12 +102,24 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
     font-weight: bold; 
     margin-right: 1em;
 }
-.small{font-size: 0.8em}/*pour adapter la taille des icones filtres les unes aux autres*/
-.medium{font-size: 1em}/*pour adapter la taille des icones filtres les unes aux autres*/
-.normal{font-size: 0.9em}/*pour adapter la taille des icones filtres les unes aux autres*/
+/*pour adapter la taille des icones filtres les unes aux autres*/
+.small{
+    font-size: 0.8em
+}
+.medium{
+    font-size: 1em}
 
-.paddm{padding-right:0.9em; padding-left: 0.9em; padding-top:0.9em; padding-bottom:0.9em}/*pour adapter les icones des filtres*/
-.paddc{padding-top:0.6em; padding-bottom: 0.4em; padding-right: 0.8em; padding-left: 0.8em }/*pour adapter les icones des filtres*/
+.normal{
+    font-size: 0.9em
+}
+/*pour adapter les icones des filtres*/
+.paddm{
+    padding-right:0.9em;
+    padding-left: 0.9em;
+    padding-top:0.9em;
+    padding-bottom:0.9em
+}
+.paddc{padding-top:0.6em; padding-bottom: 0.4em; padding-right: 0.8em; padding-left: 0.8em }
 .paddh{padding:0.6em}/*pour adapter les icones des filtres*/
 .paddd{padding-left:0.7em; padding-right: 0.7em; padding-bottom:0.7em; padding-top:0.6em}/*pour adapter les icones des filtres*/
 
@@ -167,34 +176,38 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
 
 /*partie hébergements et Les plus pop*/
 /*hebergements*/
-.accommodation{display: flex; flex-direction: row; max-width: 100%;max-height: fit-content;}
+.accommodation{display: flex; flex-direction: row; width:100% ;max-height: fit-content;justify-content: space-evenly}
 
-.titres-flex{display:flex; width:100%; padding-left: 1em; font-weight: bold;}
+.titres-flex{display:flex; width:100%; padding-left: 1em; padding-top: 1em;font-weight: bold;}
 .bottom{padding-bottom:0.8em}
 
 
-article{display: flex; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em; padding:1em; width: 66%; margin-right: 2em; height:30%;}
-.photos-article{object-fit: cover;object-position: center 60%; height: 11em; width: 19.1em;border-top-left-radius: 1.2em; border-top-right-radius: 1.2em; }
+article{display: flex; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em; padding-bottom:1em; padding-left: 1em;padding-right: 1em; width: 66%; height:30%; margin-left: -2em}
+.photos-article{object-fit: cover; height: 11em; width: 19.1em;border-top-left-radius: 1.2em; border-top-right-radius: 1.2em; }
 .box{cursor:pointer;/*cursor:pointer pour faire tout le div clickable*/ background-color: white; border-radius: 1.3em; padding:0.3em; height: 14em; width: 19.1em; margin: 1em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
 .box-photo{overflow: hidden; max-height: 8.2em; max-width: auto; object-fit: cover;}
 .sous-image{font-size: 0.8em; padding-right: 0.1em; padding-left: 1.5em; padding-top: 1em;}
 .lien-flex{display:flex; text-decoration: none; color: black; padding-left: 1.5em; padding-top: 3em; padding-bottom: 2em; font-weight: bold;}
 .p-hebergement{margin-bottom: -0.5em;font-size: 1.1em;}
 
+/*position des photos hébergement dans leurs cadre*/
+.position1{object-position: center 120%}
+.position2{object-position: center 75%;}
+.position3{object-position: center 60%;}
 
-aside{display: flex; width: 28emm; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;flex-direction: column;}
+aside{display: flex; width: 30em; height: 100%; flex-wrap: wrap; background-color: rgba(214, 214, 214, 0.616); border-radius: 1.2em;flex-direction: column;}
 
-.chart{font-size: 1.2em; padding-left: 41%}
-.photos-aside{width:9em; height:100%; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;object-fit: cover;}
-.box-aside{cursor:pointer;display: flex; background-color: white; border-radius: 1.3em; padding:0.3em; height: 10em; width:24em; margin-left:1.5em;margin-right: 1.5em;margin-bottom:1.9em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
+.chart{font-size: 1.2em; padding-left: 43%}
+.photos-aside{width:10em; height:100%; border-top-left-radius: 1.2em; border-bottom-left-radius: 1.2em;object-fit: cover;}
+.box-aside{cursor:pointer;display: flex; background-color: white; width: 26em;border-radius: 1.3em; padding:0.3em; height: 10em; margin-left:1.5em;margin-right: 1.5em;margin-bottom:1.9em;box-shadow: 0px 0px 13px rgba(126, 123, 123, 0.849)}
 .sous-image-aside{font-size: 0.8em; padding-right: 3em; padding-left: 2.5em; padding-top:1em}
 .etoiles{display: flex; color: rgba(214, 214, 214, 0.616); padding-bottom: 2em;}
 .margetop{padding-top:15%}
 .p-aside{margin-bottom: 1em;font-size: 1em;}
 .etoiles:hover{color:blue;}
 .checked{color: blue;}/*pour etoiles bleues repris de : https://www.w3schools.com/howto/howto_css_star_rating.asp - merci*/
-.titres-box{font-weight: bold; font-size: 1.2em; text-decoration:none; margin-top: 2em}
-.margetopaside{margin-top:2em}
+.titres-box{font-weight: bold; font-size: 1.3em; text-decoration:none; margin-top: 2em}
+.margetopaside{margin-bottom:1.2em; margin-left: 0.5em;}
 .euro{font-weight: bold; font-size: 1.2em;}
 
 
@@ -212,12 +225,12 @@ aside{display: flex; width: 28emm; height: 100%; flex-wrap: wrap; background-col
 .box-photos5{height: 35%; width:95%; border-radius: 1.3em;margin-bottom: 3.5em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
 .box-photos6{height: 56%; width:95%; border-radius: 1.3em;box-shadow: 0px 0px 13px rgba(211, 211, 211, 0.849); cursor:pointer}
 
-img.photos-activity1{height: 90%;width: 100%; object-position: 0 10; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-.photos-activity2{height: 80%;width: 100%;object-position: 0 10; object-fit:cover; object-position: center 25%;border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-.photos-activity3{height: 74%;width: 100%; object-position: 0 10; object-fit:cover;object-position: center 0%;border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-.photos-activity4{height: 90%;width: 100%; object-position: 0 10; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-.photos-activity5{height: 75%;width: 100%; object-position: 0 10; object-fit:cover; object-position: center 0%;border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-.photos-activity6{height: 82%;width: 100%;object-position: 0 10; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+img.photos-activity1{height: 90%;width: 100%; object-position: center 10%; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+.photos-activity2{height: 80%;width: 100%; object-fit:cover; object-position: center 25%; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+.photos-activity3{height: 74%;width: 100%; object-fit:cover; object-position: center 10%; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+.photos-activity4{height: 90%;width: 100%; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+.photos-activity5{height: 75%;width: 100%; object-fit:cover; object-position: center 20%; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
+.photos-activity6{height: 82%;width: 100%; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
 .sous-titres{text-decoration: none; margin-top: 1.2em; margin-left: 1em; font-size: 0.8em;}
 
 /*footer*/
