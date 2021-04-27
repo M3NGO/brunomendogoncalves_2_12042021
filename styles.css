@@ -233,7 +233,7 @@ img.photos-activity3{height: 74%;width: 100%; object-fit:cover; object-position:
 img.photos-activity4{height: 90%;width: 100%; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
 img.photos-activity5{height: 75%;width: 100%; object-fit:cover; object-position: center 20%; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
 img.photos-activity6{height: 82%;width: 100%; object-fit:cover; border-top-left-radius: 1.3em;border-top-right-radius: 1.3em;}
-img.sous-titres{text-decoration: none; margin-top: 1.2em; margin-left: 1em; font-size: 0.8em;}
+.sous-titres{text-decoration: none; margin-top: 1.2em; margin-left: 1em; font-size: 0.8em;}
 
 /*footer*/
 .footer{display: flex; justify-content:space-between; background-color: rgba(214, 214, 214, 0.616); width: 100%; padding-top: 2em; padding-bottom:2em}
