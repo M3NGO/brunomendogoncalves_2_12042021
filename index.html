@@ -34,19 +34,24 @@
                 </div>
     <!-- ajout menu header -->
                 <nav>
-                    <ul>
-                        <li class="menu"><a class="lien" href="#hebergements">H&eacute;bergements</a></li> <!-- remplacer les accents par code HTML / attribution classe menu dans li au lieux de DIV => pas accepté par W3C -->
-                        <li class="menu"><a class="lien" href="#activite">Activit&eacute;s</a></li>
-                    </ul>
-                    <ul>
-                        <li class="menu"><a class="lien_gras" href="#">S&apos;inscrire</a></li>
-                    </ul>
+                    <div class="enligne">
+                        <div class="large">
+                            <span class="menu"><a class="lien padding-heb" href="#hebergements">H&eacute;bergements</a></span> <!-- remplacer les accents par code HTML / attribution classe menu dans li au lieux de DIV => pas accepté par W3C -->
+                        </div>
+                        <div class="large">
+                            <span class="menu"><a class="lien padding-act" href="#activite">Activit&eacute;s</a></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <span class="menu"><a class="lien_gras" href="#">S&apos;inscrire</a></span>
+                    </div>
                 </nav>
             </header>
     <!-- section trouver l'hébergement + recherche & filtres -->
             <section class="recherche">
                 <div>
-                    <h1>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h1>
+                    <h2>Trouvez votre h&eacute;bergement pour des vacances de r&ecirc;ve</h2>
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
     <!-- ajout moteur de recherche -->
@@ -60,31 +65,31 @@
                             <input type="search" id="site-search" name="q" placeholder="Marseille, France">
                         </div>
                         <div>
-                            <button id="search">Rechercher<a id="btn-mobile"><i class="fas fa-search"></i></a></button><!-- icone dans un a pour le cacher en mode desktop et montrer dans mobile -->
+                            <button id="search">Rechercher<span id="btn-mobile"><i class="fas fa-search"></i></span></button><!-- icone dans span pour le cacher en mode desktop et montrer dans mobile -->
                         </div>
                     </form>
                 </div>
             </section>
     <!-- Section filtres / mise en place de plusieurs div pour isoler les icones du texte pour le css -->
-            <ul class="filtres">
-                    <li class="iconefiltre1">
+            <div class="filtres">
+                    <div class="iconefiltre1">
                         <a>Filtres</a>
-                    </li>
-                    <div class="row">
-                    <li class="boutons-filtre" >
-                        <span class="icones-filtre small paddm"><i class="fas fa-money-bill-wave"></i></span><a class="liens-filtre padding" href="#">&Eacute;conomique</a>
-                    </li>
-                    <li class="boutons-filtre">
-                        <span class="icones-filtre medium paddc"><i class="fa fa-child"></i></span><a class="liens-filtre" href="#">Familial</a>
-                    </li>
-                </div>
-                    <li class="boutons-filtre">
-                        <span class="icones-filtre medium paddh"><i class="fas fa-heart"></i></span><a class="liens-filtre" href="#">Romantique</a>
-                    </li>
-                    <li class="boutons-filtre">
-                        <span class="icones-filtre medium paddd"><i class="fas fa-dog"></i></span><a class="liens-filtre" href="#">Animaux autoris&eacute;s</a> 
-                    </li>
-            </ul> 
+                    </div>
+                    <div class="row"><!-- mise en row pour la version mobile et présenter les deux premiers boutons en ligne -->
+                        <div class="boutons-filtre" >
+                            <span class="icones-filtre small paddm"><i class="fas fa-money-bill-wave"></i></span><a class="liens-filtre padding" href="#">&Eacute;conomique</a>
+                        </div>
+                        <div class="boutons-filtre">
+                            <span class="icones-filtre medium paddc"><i class="fa fa-child"></i></span><a class="liens-filtre" href="#">Familial</a>
+                        </div>
+                    </div>
+                        <div class="boutons-filtre">
+                            <span class="icones-filtre medium paddh"><i class="fas fa-heart"></i></span><a class="liens-filtre" href="#">Romantique</a>
+                        </div>
+                        <div class="boutons-filtre">
+                            <span class="icones-filtre medium paddd"><i class="fas fa-dog"></i></span><a class="liens-filtre" href="#">Animaux autoris&eacute;s</a> 
+                        </div>
+            </div> 
     <!-- texte sous le moteur de recherche -->
             <div class="lignei">
                 <span class="logoi"><i class="fas fa-info"></i></span><a class="p">Plus de 500 logements sont disponibles dans cette ville</a>
@@ -192,7 +197,7 @@
                 <aside>
                     <div class="titre-aside">
                     <h2 class="titres-flex margetopaside">Les plus populaires</h2>
-                    <h2 class="chart"><i class="fas fa-chart-line icone-right"></i></h2>
+                    <span class="chart"><i class="fas fa-chart-line icone-right"></i></span>
                     </div>
                     <figure class="box-aside">
                         <div>
