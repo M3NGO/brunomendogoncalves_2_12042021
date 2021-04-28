@@ -50,30 +50,34 @@
                     <p>En plein centre ville ou en pleine nature</p>
                 </div>
     <!-- ajout moteur de recherche -->
-                <form class="searchengine">
-    <!-- icone fontawesome tiré du site : https://fontawesome.com/icons/ -->
-                    <div class="map">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
-                    <div>
-                        <input type="search" id="site-search" name="q" placeholder="Marseille, France">
-                    </div>
-                    <div>
-                        <button id="search">Rechercher</button>
-                    </div>
-                </form>
+                <div class="center">
+                    <form class="searchengine">
+        <!-- icone fontawesome tiré du site : https://fontawesome.com/icons/ -->
+                        <div class="map">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <input type="search" id="site-search" name="q" placeholder="Marseille, France">
+                        </div>
+                        <div>
+                            <button id="search">Rechercher<a id="btn-mobile"><i class="fas fa-search"></i></a></button><!-- icone dans un a pour le cacher en mode desktop et montrer dans mobile -->
+                        </div>
+                    </form>
+                </div>
             </section>
     <!-- Section filtres / mise en place de plusieurs div pour isoler les icones du texte pour le css -->
             <ul class="filtres">
                     <li class="iconefiltre1">
                         <a>Filtres</a>
                     </li>
+                    <div class="row">
                     <li class="boutons-filtre" >
                         <span class="icones-filtre small paddm"><i class="fas fa-money-bill-wave"></i></span><a class="liens-filtre padding" href="#">&Eacute;conomique</a>
                     </li>
                     <li class="boutons-filtre">
                         <span class="icones-filtre medium paddc"><i class="fa fa-child"></i></span><a class="liens-filtre" href="#">Familial</a>
                     </li>
+                </div>
                     <li class="boutons-filtre">
                         <span class="icones-filtre medium paddh"><i class="fas fa-heart"></i></span><a class="liens-filtre" href="#">Romantique</a>
                     </li>
