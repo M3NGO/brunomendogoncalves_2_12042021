@@ -47,6 +47,7 @@ p{font-size: 0.8em; color: rgba(48, 47, 47, 0.932)}
     margin-top:1em;
     height: 35px;
 }
+
 .map{/*mise en forme de l'icone map a gauche de recherche*/
     display: inline-flex; 
     font-size: 0.9em; 
@@ -67,6 +68,7 @@ p{font-size: 0.8em; color: rgba(48, 47, 47, 0.932)}
     border-right: transparent;
 }
 
+
 input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
     color: black; 
     border: transparent; 
@@ -81,6 +83,7 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
     border-top-right-radius: 10px;
     padding: 0.7em; height: 35px;
 }
+#btn-mobile{visibility: hidden;}/*ajout icone pour le mobile caché en mode desktop*/
 
 #search:hover{/*hover en bleu foncé pour faire joli quand on passe sur le bouton search :) */
     background-color: blue;
@@ -96,6 +99,7 @@ input::placeholder{ /*placeholder de la zone de recherche en noir et gras*/
     width: 100%;
     margin-left: -2.5em;
 }
+.row{display: flex;}
 .iconefiltre1{/*display inline pour applpiquer le flex a l'item du conteneur*/
     /*uniquement pour isoler le mot filtres qui n'est pas présenté comme les boutons filtres*/
     display: inline-flex; 
@@ -248,15 +252,17 @@ img.photos-activity6{height: 82%;width: 100%; object-fit:cover; border-top-left-
 
 /*media queries*/
 /*CSS iphone6/7/8*/
-@media only screen and (max-width : 375px){
+@media only screen and (max-device-width : 375px){
 
     #div_body {display:flex; flex-direction: column;margin-left: 0; margin-right: 0; height:max-content; border: solid yellow}/*definition du corps de texte full sreen*/
     
     h2{font-size: 1em;}
-    p{font-size: 0.7em;}
+    p{font-size: 0.9em;}
+    .p{font-size:0.9em}
 
+    /*mise en forme header*/
     header{position: static; top: 30px; left: 30px; }/*position static pour ne plus fixer le header sur mobile*/
-    #header_menu{height: 10em; border: solid green}
+    #header_menu{height: 8.5em; border: solid green}
     .logo_site{align-self: start;}
     nav{display:flex; flex-wrap: wrap;width: 100%; border: dotted khaki}
     .lien{align-self: baseline;border-bottom: solid rgba(214, 214, 214, 0.616); padding-bottom: 2.2em;width :375px}
@@ -264,12 +270,31 @@ img.photos-activity6{height: 82%;width: 100%; object-fit:cover; border-top-left-
     .menu{}
     
     .lien_gras{}
+
+    /* mise en forme search engine*/
+    .center{display:flex; justify-content: center;}/*pour centrer le moteur de recherche en mobile/ajout class dans html fait*/
+    #search{visibility:hidden}
+    #btn-mobile{visibility: visible;    background-color: rgb(0, 89, 255); 
+        color: white; 
+        border: transparent; 
+        border-radius: 10px;
+        border-radius: 10px;
+        padding-left: 0.9em; padding-right: 0.9em; padding-bottom:0.7em; padding-top:0.8em;margin-left:-4em;
+        }
+
+    #site-search{width: 120%}/*120% de la taille desktop*/
+    #btn-mobile:hover{background-color: blue}
     
     
     /*mise en forme filtres en colonne*/
-    .filtres{flex-direction: column; align-content: space-between; justify-content: flex-start; width: fit-content}
-    
-    
+    .filtres{ flex-wrap: wrap;}
+    .iconefiltre1{padding-right:10em; padding-bottom:1em}
+    .row{display: flex;}
+    .space1{display:inline-flex; width: 100%}
+    .boutons-filtre{margin-bottom:1em}
+
+    .lignei{align-items:flex-start}
+
 
     /*mise en forme article & aside*/
     .accommodation{flex-direction: column;}
@@ -308,7 +333,7 @@ img.photos-activity6{height: 82%;width: 100%; object-fit:cover; border-top-left-
 
     
     /*mise en forme footer*/
-    footer{margin-left: 0; margin-right: 0; height:100%;}
+    footer{margin-left: 0em; margin-right: 0em; height:100%;}
     .footer{flex-direction: column;}
     .box-footer{display: flex; width: 100%}
 
