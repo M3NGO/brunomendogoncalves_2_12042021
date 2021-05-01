@@ -691,15 +691,12 @@ img.photos-activity6{
     #btn-mobile{
         visibility: visible;/*pour rendre ce bouton visible en mobile et non en desktop*/
         background-color: rgb(0, 89, 255); 
-        color: white; 
-        border: transparent; 
-        border-radius: 10px;
-        border-radius: 10px;
-        padding-left: 0.9em;
-        padding-right: 0.9em;
-        padding-bottom:0.7em;
-        padding-top:0.8em;
-        margin-left:-4em;
+    color: white; 
+    border: transparent; 
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 0.7em; height: 35px;
+    margin-left: -2em;
         }
     #btn-mobile:hover{
         background-color: blue
@@ -707,7 +704,6 @@ img.photos-activity6{
     #site-search{/*120% de la taille desktop - zone recherche uniquement*/
         width: 120%
     }
-    
     
     
     /*mise en forme filtres en colonne*/
