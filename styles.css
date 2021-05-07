@@ -904,7 +904,7 @@ img.photos-activity6{
         justify-content: space-between
     }
     .box-activity{
-        height:fit-content
+        height:max-content;
 
     }
 
@@ -944,8 +944,13 @@ img.photos-activity6{
     }
     .box-aside{margin-left: 0em;}
     .box {
-        width: 17.5em;
+        width: 16em;
     }
+    .box-activity {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }   
 
     .box-de-un {
       
